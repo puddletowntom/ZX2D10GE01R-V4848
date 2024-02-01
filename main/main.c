@@ -30,8 +30,8 @@ void lvgl_task(void* arg) {
     esp_timer_create(&periodic_timer_args, &periodic_timer);
     esp_timer_start_periodic(periodic_timer, portTICK_PERIOD_MS * 1000);
 
-    extern void lv_demo_benchmark(void);
-    lv_demo_benchmark();
+   // extern void lv_demo_benchmark(void);
+   // lv_demo_benchmark();
 
     for (;;) {
         lv_task_handler();
